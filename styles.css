@@ -2,9 +2,11 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100;
+    height: 100%;
     overflow: hidden;
     background-color: black;
+    background-image: url('stars.png');
+    background-size: cover;
 }
 
 #space {
@@ -16,8 +18,8 @@ body, html {
 #potato {
     position: absolute;
     width: 100px;
-    heght: auto;
+    height: auto;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(-45deg);
 }

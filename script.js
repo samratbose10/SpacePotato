@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     const potato = document.getElementById('potato');
-    let posX = 50; 
-    let posY = 50; 
+    let posX = 50;
+    let posY = 50;
 
     function movePotato() {
-        posX += Math.random() * 4 - 2; 
-        posY += Math.random() * 4 - 2; 
+        posX += Math.random() * 4 - 2;
+        posY += Math.random() * 4 - 2;
 
         if (posX < 0) posX = 0;
         if (posX > 100) posX = 100;
@@ -13,3 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (posY > 100) posY = 100;
 
         potato.style.left = `${posX}%`;
+        potato.style.top = `${posY}%`;
+    }
+
+    setInterval(movePotato, 100);
+});
