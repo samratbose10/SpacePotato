@@ -5,8 +5,6 @@ body, html {
     height: 100%;
     overflow: hidden;
     background-color: black;
-    background-image: url('stars.png');
-    background-size: cover;
 }
 
 #space {
@@ -20,6 +18,14 @@ body, html {
     width: 100px;
     height: auto;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
+    top: 50
+    transform: traslate(-50%, -50%) rotate(-45deg);
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
 }

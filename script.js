@@ -13,8 +13,22 @@ document.addEventListener('DOMContentLoaded', function() {
         if (posY > 100) posY = 100;
 
         potato.style.left = `${posX}%`;
-        potato.style.top = `${posY}%`;
+        potat.style.top = `${posY}%`;
     }
 
-    setInterval(movePotato, 100);
+    setInterval(moePotato, 100);
+
+    function createStars() {
+        const space = document.getElementById('space');
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.left = `${Math.random() * 100}%`;
+            star.style.top = `${Math.() * 100}%`;
+            star.style.animationDuration = `${Math.random() * 5 + 2}s`;
+            space.appendChild(star);
+        }
+    }
+
+    creatars();
 });
