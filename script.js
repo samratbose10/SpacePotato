@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const potato = document.getElementById('potato');
+    const startButton = document.getElementById('startButton');
+    const bgMusic = document.getElementById('bgMusic');
     let posX = 50;
     let posY = 50;
 
@@ -31,4 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     createStars();
+
+    startButton.addEventListener('click', function() {
+        bgMusic.play();
+        startButton.style.display = 'none';
+    });
 });
