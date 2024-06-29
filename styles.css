@@ -18,8 +18,8 @@ body, html {
     width: 100px;
     height: auto;
     left: 50%;
-    top: 50
-    transform: traslate(-50%, -50%) rotate(-45deg);
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .star {
@@ -28,4 +28,14 @@ body, html {
     height: 2px;
     background-color: white;
     border-radius: 50%;
+    animation: moveStar linear infinite;
+}
+
+@keyframes moveStar {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
 }

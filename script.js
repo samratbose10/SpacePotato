@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
         if (posY > 100) posY = 100;
 
         potato.style.left = `${posX}%`;
-        potat.style.top = `${posY}%`;
+        potato.style.top = `${posY}%`;
     }
 
-    setInterval(moePotato, 100);
+    setInterval(movePotato, 100);
 
     function createStars() {
         const space = document.getElementById('space');
@@ -24,11 +24,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const star = document.createElement('div');
             star.classList.add('star');
             star.style.left = `${Math.random() * 100}%`;
-            star.style.top = `${Math.() * 100}%`;
+            star.style.top = `${Math.random() * 100}%`;
             star.style.animationDuration = `${Math.random() * 5 + 2}s`;
             space.appendChild(star);
         }
     }
 
-    creatars();
+    createStars();
 });
